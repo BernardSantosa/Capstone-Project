@@ -8,7 +8,7 @@ import os
 import requests
 
 DATA_URL = 'https://raw.githubusercontent.com/BernardSantosa/course-rec-data/refs/heads/main/clean_data.csv'
-PICKLE_URL = 'https://github.com/BernardSantosa/course-rec-data/raw/refs/heads/main/vectorizer.pkl'
+PICKLE_URL = 'https://raw.githubusercontent.com/BernardSantosa/course-rec-data/refs/heads/main/vectorizer.pkl'
 
 DATA_PATH = '/tmp/clean_data.csv'
 PICKLE_PATH = '/tmp/vectorizer.pkl'
