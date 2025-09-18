@@ -1,0 +1,131 @@
+.course-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.course-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.course-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+    flex: 1;
+    margin-right: 16px;
+    line-height: 1.4;
+}
+
+.course-rating {
+    display: flex;
+    align-items: center;
+    background: #fef3c7;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.rating-stars {
+    color: #f59e0b;
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+.rating-value {
+    font-weight: 600;
+    color: #92400e;
+    font-size: 14px;
+}
+
+.card-body {
+    margin-bottom: 20px;
+}
+
+.course-description {
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 0 16px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.course-meta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.meta-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: #f9fafb;
+    border-radius: 6px;
+}
+
+.meta-label {
+    font-weight: 500;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.meta-value {
+    color: #1f2937;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-align: right;
+}
+
+.course-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.course-button:hover {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .course-meta {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .meta-item:last-child {
+        grid-column: 1 / -1;
+    }
+}
