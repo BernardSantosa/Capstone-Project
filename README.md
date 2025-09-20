@@ -50,5 +50,3 @@ Make sure you have the following software installed:
 ![Screenshot](Prompt/Prompt3.png)
 ![Screenshot](Prompt/Prompt4.png)
 ![Screenshot](Prompt/Prompt5.png)
-![Screenshot](Prompt/Prompt6.png)
-![Screenshot](Prompt/Prompt7.png)
