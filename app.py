@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
-import pickle
-import numpy as np
-import pandas as pd
-from sklearn.metrics.pairwise import cosine_similarity
-import os
-import requests
+# import pickle
+# import numpy as np
+# import pandas as pd
+# from sklearn.metrics.pairwise import cosine_similarity
+# import os
+# import requests
 
 # DATA_URL = 'https://raw.githubusercontent.com/BernardSantosa/course-rec-data/refs/heads/main/clean_data.csv'
 # PICKLE_URL = 'https://raw.githubusercontent.com/BernardSantosa/course-rec-data/refs/heads/main/vectorizer.pkl'
