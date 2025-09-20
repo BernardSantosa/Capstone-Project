@@ -1,0 +1,6 @@
+clean_data.csv
+vectorizer.pkl
+
+venv/
+__pycache__/
+*.pyc
