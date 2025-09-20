@@ -8,14 +8,16 @@
 </head>
 <body>
     <header class="navbar">
+        <img src="{{ url_for('static', filename='Logo.png') }}" alt="" class="logo">
         <div class=""></div>
     </header>
     <h1 class="title">Enter a keyword to get course recommendations</h1>
-    <form id="recomForm" class="submit-card">
-        <input type="text" id="textInput" name="text" placeholder="e.g., Python" required>
-        <!-- <button type="submit" class="img-search"><img src="{{ url_for('static', filename='search.png') }}" class="img-search"></button> -->
-         <button type="submit" class="img-search">🔍︎</button>
-    </form>
+    <div class="sub-wrap">
+        <form id="recomForm" class="submit-card">
+            <input type="text" id="textInput" name="text" placeholder="e.g., Python" required>
+            <button type="submit" class="img-search">🔍︎</button>
+        </form>
+    </div>
 
     <h2 class="result-text"><span id="find-content"></span></h2>
     <ul id="results" class="result-wrap"></ul>

@@ -16,8 +16,8 @@
 }
 
 .result-wrap {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     margin-top: 2rem;
 }
 
@@ -159,7 +159,18 @@
 }
 .result-text {
     color: #334155;
+    text-align: center;
     margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.logo {
+    width: 8%;
+}
+
+.navbar {
+    background-color: #fff385;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -172,10 +183,10 @@ body {
     background-color: #f4f7f9;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     margin: 0;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .title {
@@ -183,6 +194,12 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
+}
+
+.sub-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .submit-card {
@@ -205,3 +222,4 @@ body {
     color: #1e293b;
     padding: 8px; 
 }
+
