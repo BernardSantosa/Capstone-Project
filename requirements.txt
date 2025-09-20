@@ -3,4 +3,3 @@ Flask-Cors
 scikit-learn==1.6.1
 pandas
 numpy
-requests
