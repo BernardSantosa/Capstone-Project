@@ -46,3 +46,9 @@ Make sure you have the following software installed:
 
 ## Prompt Example
 ![Screenshot](Prompt/Prompt1.png)
+![Screenshot](Prompt/Prompt2.png)
+![Screenshot](Prompt/Prompt3.png)
+![Screenshot](Prompt/Prompt4.png)
+![Screenshot](Prompt/Prompt5.png)
+![Screenshot](Prompt/Prompt6.png)
+![Screenshot](Prompt/Prompt7.png)
