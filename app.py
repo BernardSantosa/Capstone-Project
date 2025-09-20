@@ -4,9 +4,31 @@ import pickle
 import numpy as np
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
+import os
+import requests
 
-data = pd.read_csv("clean_data.csv")
-vectorizer = pickle.load(open("vectorizer.pkl", 'rb'))
+DATA_URL = 'https://raw.githubusercontent.com/BernardSantosa/course-rec-data/refs/heads/main/clean_data.csv'
+PICKLE_URL = 'https://raw.githubusercontent.com/BernardSantosa/course-rec-data/refs/heads/main/vectorizer.pkl'
+
+DATA_PATH = '/tmp/clean_data.csv'
+PICKLE_PATH = '/tmp/vectorizer.pkl'
+
+def download_file(url, destination):
+    if not os.path.exists(destination):
+        response = requests.get(url, stream=True)
+        response.raise_for_status()
+        with open(destination, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+
+if not os.path.exists('/tmp'):
+    os.makedirs('/tmp')
+
+download_file(DATA_URL, DATA_PATH)
+download_file(PICKLE_URL, PICKLE_PATH)
+
+data = pd.read_csv(DATA_PATH)
+vectorizer = pickle.load(open(PICKLE_PATH, 'rb'))
 x = vectorizer.transform(data['Combined'])
 
 def get_recommendation(text, n_rec = 7):
