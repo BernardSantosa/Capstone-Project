@@ -43,10 +43,3 @@ Make sure you have the following software installed:
 ## AI support explanation
 * **Function:** The recommendation engine utilizes a machine learning model to process user queries and match them with relevant courses from the dataset.
 * **Technology:** The backend logic for query processing and data retrieval is handled by a Python script interacting with the Flask API.
-
-## Prompt Example
-![Screenshot](Prompt/Prompt1.png)
-![Screenshot](Prompt/Prompt2.png)
-![Screenshot](Prompt/Prompt3.png)
-![Screenshot](Prompt/Prompt4.png)
-![Screenshot](Prompt/Prompt5.png)
