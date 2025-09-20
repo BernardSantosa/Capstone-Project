@@ -1,5 +1,7 @@
 .course-card {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background: white;
+    color: #334155;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -11,6 +13,12 @@
 .course-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.result-wrap {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
 }
 
 .card-header {
@@ -119,7 +127,6 @@
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
-/* Responsive design */
 @media (min-width: 768px) {
     .course-meta {
         grid-template-columns: 1fr 1fr;
@@ -128,4 +135,73 @@
     .meta-item:last-child {
         grid-column: 1 / -1;
     }
+}
+
+.title {
+    text-align: center;
+}
+
+.submit-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-search {
+    border: none;
+    background-color: white;
+    font: 10%;
+}
+
+.img-search:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.result-text {
+    color: #334155;
+    margin-left: 2rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.title {
+    color: #334155;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.submit-card {
+    background-color: #ffffff;
+    border-radius: 9999px;
+    padding: 8px 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 40%;
+    border: 1px solid #e2e8f0;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#textInput {
+    flex-grow: 1; 
+    border: none;
+    outline: none; 
+    font-size: 1rem;
+    background: transparent;
+    color: #1e293b;
+    padding: 8px; 
 }

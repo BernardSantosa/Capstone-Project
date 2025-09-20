@@ -10,13 +10,14 @@
     <header class="navbar">
         <div class=""></div>
     </header>
-    <h1 class="title">Enter a keyword to get course recommendations:</h1>
-    <form id="recomForm">
+    <h1 class="title">Enter a keyword to get course recommendations</h1>
+    <form id="recomForm" class="submit-card">
         <input type="text" id="textInput" name="text" placeholder="e.g., Python" required>
-        <button type="submit" class="title">Get Recommendations</button>
+        <!-- <button type="submit" class="img-search"><img src="{{ url_for('static', filename='search.png') }}" class="img-search"></button> -->
+         <button type="submit" class="img-search">🔍︎</button>
     </form>
 
-    <h2 class="title">Results:</h2>
-    <ul id="results"></ul>
+    <h2 class="result-text"><span id="find-content"></span></h2>
+    <ul id="results" class="result-wrap"></ul>
 </body>
 </html>

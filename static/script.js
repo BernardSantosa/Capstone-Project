@@ -13,9 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         const data = await response.json();
+
+        const findContent = document.getElementById('find-content');
+        findContent.innerHTML = `Recommended Course for "${text}"`;
         
         const resultList = document.getElementById("results");
         resultList.innerHTML = "";
+        
         data.forEach(rec => {
             const card = document.createElement("div");
             card.className = "course-card";
