@@ -8,7 +8,7 @@ This application is designed for all learners seeking to acquire new skills and 
 ## Technologies used
 Tech Stack
 
-* **Frontend:** HTML5, CSS3, Vanilla JavaScript
+* **Frontend:** HTML, CSS, Vanilla JavaScript
 * **Backend:** Python with Flask Framework
 * **Dataset:** [Coursera Course Dataset 2023](https://www.kaggle.com/datasets/tianyimasf/coursera-course-dataset) from Kaggle
 ## Features
